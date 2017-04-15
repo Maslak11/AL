@@ -11,3 +11,7 @@ StartProgress = false;
 [] execVM "KRON_Strings.sqf";
 
 StartProgress = true;
+emergLight_vehicles = [];
+{
+ emergLight_vehicles pushBack (configName _x);
+} forEach ("true" configClasses (missionConfigFile >> "emergLightVehicles"));
