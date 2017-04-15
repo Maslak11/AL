@@ -25,6 +25,15 @@ class Life_Client_Core {
         class welcomeNotification {};
     };
 
+class blackfisch_Functions {
+    tag = "bf";
+
+ class Scripts {
+    file = "core\scripts";
+     class lights {};
+     class lightsOn {};
+ };
+
     class Actions {
         file = "core\actions";
         class arrestAction {};
