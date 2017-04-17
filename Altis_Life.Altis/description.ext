@@ -169,4 +169,12 @@ class CfgNotifications {
         duration = 10;
         priority = 5;
     };
+
+    class PolizeiRundfunk {
+         title = "Komunikat Policji";
+         iconPicture = "icons\messagepolice.paa"; //Icon kann geändert werden, kein Icon = leere ""
+         description = "%1";
+         duration = 10;
+         priority = 5;
+     };
 };

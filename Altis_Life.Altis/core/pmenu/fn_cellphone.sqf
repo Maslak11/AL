@@ -32,4 +32,8 @@ if (FETCH_CONST(life_adminlevel) < 1) then {
     };
 } forEach playableUnits;
 
+if(((call life_coplevel) < 5) || playerSide != west) then { //10 kann durch einen beliebigen Rang ersetzt werden, ab dem es verfügbar sein soll
+ ctrlShow[3023,false];
+};
+
 lbSetCurSel [3004,0];
