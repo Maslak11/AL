@@ -14,6 +14,11 @@ _source = _this select 3;
 _projectile = _this select 4;
 
 //Handle the tazer first (Top-Priority).
+if ((vehicle _unit) isKindOf "Car" && (isNull _source || _source isEqualTo _unit)) then
+{
+ _damage = if (life_seatbelt) then { _damage / 2 } else { _damage};
+};
+
 if (!isNull _source) then {
     if (_source != _unit) then {
         if (_unit getVariable["Revive",false]) exitWith {};

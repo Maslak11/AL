@@ -15,5 +15,16 @@ if (!hasInterface && !isServer) exitWith {
 
 CONST(BIS_fnc_endMission,BIS_fnc_endMission);
 if (LIFE_SETTINGS(getNumber,"spyGlass_toggle") isEqualTo 1) then {[] execVM "SpyGlass\fn_initSpy.sqf";};
-
+if (hasInterface) then {
+ player addEventHandler ["GetOutMan", {
+ life_seatbelt = false;
+ //[] call life_fnc_hudUpdate; //--Aktivier das wenn du eine Hud Option aktiviert hast wenn man ein Anschnallgurt angelegt hat.
+ }];
+};
+if (hasInterface) then {
+ player addEventHandler ["GetInMan", {
+ life_seatbelt = false;
+ //[] call life_fnc_hudUpdate; //--Aktivier das wenn du eine Hud Option aktiviert hast wenn man ein Anschnallgurt angelegt hat.
+ }];
+};
 [] execVM "core\init.sqf";
