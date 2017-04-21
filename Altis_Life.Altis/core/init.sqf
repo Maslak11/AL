@@ -54,6 +54,9 @@ diag_log "::Life Client:: Setting up Eventhandlers";
 diag_log "::Life Client:: Eventhandlers completed";
 diag_log "::Life Client:: Setting up user actions";
 [] call life_fnc_setupActions;
+[] spawn life_fnc_fuelCheck;
+[] spawn life_fnc_fuelConfig;
+[] spawn life_fnc_initFuelAction;
 
 diag_log "::Life Client:: User actions completed";
 diag_log "::Life Client:: Waiting for server functions to transfer..";
