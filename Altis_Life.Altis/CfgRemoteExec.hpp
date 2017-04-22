@@ -13,7 +13,6 @@ class CfgRemoteExec {
         jip = 0;
 
         /* Client only functions */
-        F(bf_fnc_lightsOn,ANYONE)
         F(life_fnc_addVehicle2Chain,CLIENT)
         F(life_fnc_adminid,CLIENT)
         F(life_fnc_admininfo,CLIENT)
@@ -158,6 +157,7 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
+        F(bf_fnc_lightsOn,ANYONE)
     };
 
     class Commands {

@@ -13,5 +13,5 @@ StartProgress = false;
 StartProgress = true;
 emergLight_vehicles = [];
 {
- emergLight_vehicles pushBack (configName _x);
+        emergLight_vehicles pushBack (configName _x);
 } forEach ("true" configClasses (missionConfigFile >> "emergLightVehicles"));

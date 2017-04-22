@@ -11,6 +11,18 @@ class Socket_Reciever {
     };
 };
 
+class Core_Functions {
+    tag = "bf";
+
+    class Scripts {
+        file = "scripts";
+        class keyHandler {};
+        class lights {};
+        class lightsOn {};
+        class siren {};
+    };
+};
+
 class Life_Client_Core {
     tag = "life";
 
@@ -24,15 +36,6 @@ class Life_Client_Core {
         class survival {};
         class welcomeNotification {};
     };
-
-class blackfisch_Functions {
-    tag = "bf";
-
- class Scripts {
-    file = "core\scripts";
-     class lights {};
-     class lightsOn {};
- };
 
     class Actions {
         file = "core\actions";
