@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1176;
+		nextID=1177;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8464.8516,362.97849,25019.49};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={3196.8093,43.587414,12503.39};
+		dir[]={0.45428827,-0.51066548,-0.72996658};
+		up[]={0.26982376,0.85977799,-0.43356234};
+		aside[]={-0.84901536,-1.1124939e-007,-0.52837753};
 	};
 };
 binarizationWanted=0;
@@ -63,7 +63,8 @@ addons[]=
 	"A3_Structures_F_Mil_Flags",
 	"A3_Characters_F",
 	"A3_Characters_F_Exp_Civil",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"A3_Structures_F_Ind_FuelStation_Small"
 };
 class AddonsMetaData
 {
@@ -202,6 +203,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -216,24 +235,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -292,7 +293,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=872;
+		items=873;
 		class Item0
 		{
 			dataType="Marker";
@@ -15989,6 +15990,7 @@ class Mission
 				angles[]={0,2.3506639,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -15996,7 +15998,6 @@ class Mission
 			};
 			id=544;
 			type="Land_CashDesk_F";
-			atlOffset=0.47982728;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24403,7 +24404,6 @@ class Mission
 			};
 			id=746;
 			type="Land_CashDesk_F";
-			atlOffset=0.20866203;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -31638,6 +31638,7 @@ class Mission
 						angles[]={0,5.2196856,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -31646,7 +31647,6 @@ class Mission
 					};
 					id=984;
 					type="C_man_1";
-					atlOffset=0.45298624;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31689,7 +31689,6 @@ class Mission
 					};
 					id=985;
 					type="C_man_polo_3_F";
-					atlOffset=0.14582825;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34825,7 +34824,6 @@ class Mission
 					};
 					id=1065;
 					type="C_Nikos_aged";
-					atlOffset=0.22426224;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36900,23 +36898,39 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3770.4551,11.91758,13474.052};
+				position[]={3240.5923,6.5757718,12450.963};
+				angles[]={0.021328852,1.2723114,0.010664274};
 			};
 			name="Tankstelle";
 			init="{ _x setFuelCargo 0; } forEach (nearestObjects [Tankstelle, [""Land_fs_feed_F""], 10000]);";
 			id=1174;
 			type="Logic";
-			atlOffset=9.5367432e-007;
 		};
 		class Item871
 		{
 			dataType="Marker";
-			position[]={3756.886,0,13482.363};
+			position[]={3240.8271,4.0254965,12493.118};
 			name="fuelshop_1 ";
 			text="Stacja Paliw";
 			type="mil_dot";
+			angle=72.898071;
 			id=1175;
-			atlOffset=-12.182455;
+		};
+		class Item872
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3241.8967,7.4024849,12451.581};
+				angles[]={0,1.2723114,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1176;
+			type="Land_fs_feed_F";
 		};
 	};
 };
