@@ -10877,4 +10877,50 @@
             <German>Admin-Nachricht</German>
         </Key>
     </Package>
+    <Package name="derleon">
+         <Key ID="STR_VIS_SU_ignitionOn">
+             <Original>Ignition on</Original>
+             <Czech>zapalování zapnuto</Czech>
+             <French></French>
+             <Spanish>ignición</Spanish>
+             <Italian></Italian>
+             <Polish></Polish>
+             <Portuguese>ignição</Portuguese>
+             <Russian>при включенном зажигании</Russian>
+             <German>Zuendung an</German>
+         </Key>
+         <Key ID="STR_VIS_SU_ignitionOff">
+             <Original>Ignition off</Original>
+             <Czech>zapalování</Czech>
+             <French></French>
+             <Spanish>ignición</Spanish>
+             <Italian></Italian>
+             <Polish></Polish>
+             <Portuguese>ignição</Portuguese>
+             <Russian>Выключить зажигание</Russian>
+             <German>Zuendung aus</German>
+         </Key>
+         <Key ID="STR_VIS_SU_visOn">
+             <Original>VIS activate</Original>
+             <Czech>povolit VIS</Czech>
+             <French></French>
+             <Spanish>activar VIS</Spanish>
+             <Italian></Italian>
+             <Polish></Polish>
+             <Portuguese>VIS ativar</Portuguese>
+             <Russian>включить VIS</Russian>
+             <German>VIS aktivieren</German>
+         </Key>
+         <Key ID="STR_VIS_SU_visOff">
+             <Original></Original>
+             <Czech>zakázat VIS</Czech>
+             <French></French>
+             <Spanish>desactivar VIS</Spanish>
+             <Italian></Italian>
+             <Polish></Polish>
+             <Portuguese>desativar o VIS</Portuguese>
+             <Russian>отключить VIS</Russian>
+             <German>VIS deaktivieren</German>
+         </Key>
+ </Package>
 </Project>
