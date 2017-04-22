@@ -212,6 +212,16 @@ class playerSettings {
  w = 0.127979 * safezoneW;
  h = 0.0544025 * safezoneH;
  };
+class PoliceNewsBroadcast : life_RscButtonMenu {
+ idc = 3024;
+ text = "AAN News Nachricht";
+ onButtonClick = "closeDialog 0; [] call life_fnc_newsBroadcast;";
+ x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+ y = 0.805; 
+ w = (6.25 / 40);
+ h = (1 / 25); 
+};
+
  class ButtonSyncData: Life_RscButtonMenu {
  idc = -1;
  //shortcuts[] = {0x00050000 + 2};

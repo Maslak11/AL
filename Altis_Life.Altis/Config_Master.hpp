@@ -136,6 +136,13 @@ class Life_Settings {
     vehicle_sell_multiplier_MEDIC = .5; //Medic Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
     vehicle_sell_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
+    /* Channel 7 News Station Configurations */
+     news_broadcast_cost = 150000; //Preis für eine Nachricht im Fernsehen
+     news_broadcast_cooldown = 20; //Abklingzeit zwischen zwei Nachrichten. (Default = 20 minutes)
+     news_broadcast_header_length = 60; //Maximallänge der Überschrift. Alles darüber wird abgeschnitten. Hängt von der Schriftart, -größe und anderen Faktoren ab. Vorsicht beim Abändern!
+     cop_news_broadcast_cooldown = 5; //Abklingzeit zwischen zwei Nachrichten der Polizei
+     cop_news_broadcast_minimum_Rank = 5; //Benötigter Rang für Polizisten, um Nachricht zu senden
+
     /* "Other" Vehicle Prices */
     vehicle_chopShop_multiplier = .25; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
     vehicle_storage_fee_multiplier = .2; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier

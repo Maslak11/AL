@@ -60,6 +60,7 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+        class newsBroadcast {};
     };
 
     class Admin {
@@ -205,6 +206,8 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+        class AAN {};
+        class postNewsBroadcast {};
     };
 
     class Gangs    {

@@ -55,6 +55,7 @@ life_settings_revealObjects = profileNamespace getVariable["life_settings_reveal
 life_settings_viewDistanceFoot = profileNamespace getVariable["life_viewDistanceFoot",1250];
 life_settings_viewDistanceCar = profileNamespace getVariable["life_viewDistanceCar",1250];
 life_settings_viewDistanceAir = profileNamespace getVariable["life_viewDistanceAir",1250];
+life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
 
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];
