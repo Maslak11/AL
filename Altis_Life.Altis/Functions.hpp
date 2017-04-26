@@ -26,6 +26,11 @@ class Core_Functions {
 class Life_Client_Core {
     tag = "life";
 
+    class MiniGames {
+        file = "core\boatrental";
+        class boatRental {};
+    };
+
     class Master_Directory {
         file = "core";
         class initCiv {};

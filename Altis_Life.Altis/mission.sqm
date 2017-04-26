@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1176;
+		nextID=1180;
 	};
 	class MarkerIDProvider
 	{
-		nextID=222;
+		nextID=224;
 	};
 	class Camera
 	{
-		pos[]={3616.106,35.499046,13148.367};
-		dir[]={0.29912195,-0.50673479,-0.80855411};
-		up[]={0.17582069,0.8621015,-0.47525969};
-		aside[]={-0.93788582,2.6507769e-007,-0.34696734};
+		pos[]={3375.1511,13.828266,12618.879};
+		dir[]={-0.80046052,-0.52375638,0.29149905};
+		up[]={-0.49214995,0.85186332,0.17922303};
+		aside[]={0.34218672,2.7572969e-007,0.93964964};
 	};
 };
 binarizationWanted=0;
@@ -194,24 +194,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -226,6 +208,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -284,7 +284,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=871;
+		items=874;
 		class Item0
 		{
 			dataType="Marker";
@@ -5037,6 +5037,7 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -5044,7 +5045,6 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
-			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -32649,6 +32649,7 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -32657,7 +32658,6 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=1.2672386;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33155,6 +33155,7 @@ class Mission
 						angles[]={0,0.53849125,6.2823396};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -33163,7 +33164,6 @@ class Mission
 					};
 					id=1020;
 					type="C_man_1";
-					atlOffset=0.51165199;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36952,6 +36952,98 @@ class Mission
 			{
 			};
 			id=1174;
+		};
+		class Item871
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3357.7651,1.5621152,12624.995};
+						angles[]={0,1.9780943,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false; this AddAction [""Wypozyczalnia lodzi"",life_fnc_boatrental];";
+					};
+					id=1177;
+					type="C_Man_casual_4_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1176;
+		};
+		class Item872
+		{
+			dataType="Marker";
+			position[]={3357.6533,0.78503418,12624.967};
+			name="boatrentalTimeOver";
+			text="Wypożyczalnia łodzi";
+			type="mil_dot";
+			id=1178;
+			atlOffset=-0.76975834;
+		};
+		class Item873
+		{
+			dataType="Marker";
+			position[]={3331.3,0,12631.813};
+			name="boatrental_spawn";
+			type="Empty";
+			angle=164.65973;
+			id=1179;
+			atlOffset=1.7147845;
 		};
 	};
 };
